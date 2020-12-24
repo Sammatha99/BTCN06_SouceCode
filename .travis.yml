@@ -1,6 +1,8 @@
 language: csharp
 solution: BTCN06_SouceCode.sln
 dotnet: 5.0.101
+before_install:
+	- cd BTCN06_SouceCode
 script:
   - dotnet restore
-  - dotnet test
+  - dotnet test ..\MyTest\bin\Debug\MyTest.dll
