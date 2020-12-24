@@ -3,6 +3,4 @@ solution: BTCN06_SouceCode.sln
 dotnet: 5.0.101
 script:
   - cd MyTest
-  - dotnet restore
-  - dotnet build
   - dotnet test
