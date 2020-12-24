@@ -141,15 +141,7 @@ namespace MyTest
         Point point1;
         Point point2;
 
-        [DynamicData(nameof(ReadPointExcelTC), DynamicDataSourceType.Method)]
-        [TestMethod]
-        [DataTestMethod]
-        public void IsAPointTest(string x, string y, string result)
-        {
-            bool IsPoint = result == "0" ? false : true;
-            point1 = new Point(x, y);
-            Assert.AreEqual(IsPoint, point1.IsAPoint());
-        }
+
 
         [TestMethod]
         public void IsAPointTest_Test()
@@ -161,6 +153,16 @@ namespace MyTest
         public void Fail_Test()
         {
             Assert.Fail();
+        }
+
+        [DynamicData(nameof(ReadPointExcelTC), DynamicDataSourceType.Method)]
+        [TestMethod]
+        [DataTestMethod]
+        public void IsAPointTest(string x, string y, string result)
+        {
+            bool IsPoint = result == "0" ? false : true;
+            point1 = new Point(x, y);
+            Assert.AreEqual(IsPoint, point1.IsAPoint());
         }
 
         [DynamicData(nameof(ReadPointDistanceExcelTC), DynamicDataSourceType.Method)]
