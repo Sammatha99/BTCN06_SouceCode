@@ -1,6 +1,6 @@
 language: csharp
 solution: BTCN06_SouceCode.sln
+mono: none
 dotnet: 5.0.101
 script:
-  - dotnet restore
-  - dotnet test
+  - dotnet test MyTest/MyTest.csproj
