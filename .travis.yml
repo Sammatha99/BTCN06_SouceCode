@@ -4,5 +4,5 @@ dotnet: 5.0.101
 before_install:
 	- cd BTCN06_SouceCode
 script:
-  - dotnet restore
+  - dotnet restore 
   - dotnet test ..\MyTest\bin\Debug\MyTest.dll
