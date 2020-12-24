@@ -1,5 +1,8 @@
 language: csharp
-mono: none
-solution: BTCN06_SouceCode.sln
+mono: latest
+before_install:
+	- cd BTCN06_SouceCode
 script:
-  - dotnet test Lib.Tests/Lib.Tests.csproj
+  - dotnet restore
+  - msbuild
+  - dontnet test ../Lib.Tests/bin/Debug/MyTest.dll
