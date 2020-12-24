@@ -5,4 +5,4 @@ before_install:
 script:
   - dotnet restore
   - msbuild
-  - dontnet test ../Lib.Tests/bin/Debug/MyTest.dll
+  - dontnet test ../MyTest/bin/Debug/MyTest.dll
