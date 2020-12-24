@@ -1,7 +1,5 @@
 language: csharp
 mono: none
 solution: BTCN06_SouceCode.sln
-before_script:
-  - sudo apt Install EPPlus
 script:
   - dotnet test Lib.Tests/Lib.Tests.csproj
