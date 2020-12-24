@@ -2,6 +2,7 @@ language: csharp
 mono: latest
 before_install:
 	- cd BTCN06_SouceCode
+
 script:
   - dotnet restore
   - msbuild
