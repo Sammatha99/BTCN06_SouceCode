@@ -1,7 +1,6 @@
 language: csharp
-mono: latest
 before_install:
-	- cd BTCN06_SouceCode
+ - cd BTCN06_SouceCode
 
 script:
   - dotnet restore
