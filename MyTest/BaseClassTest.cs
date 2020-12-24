@@ -157,6 +157,12 @@ namespace MyTest
             Assert.AreEqual(true, new Point("1", "a").IsAPoint());
         }
 
+        [TestMethod]
+        public void Fail_Test()
+        {
+            Assert.Fail();
+        }
+
         [DynamicData(nameof(ReadPointDistanceExcelTC), DynamicDataSourceType.Method)]
         [TestMethod]
         [DataTestMethod]
