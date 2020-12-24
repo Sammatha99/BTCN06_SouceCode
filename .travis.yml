@@ -3,5 +3,4 @@ solution: BTCN06_SouceCode.sln
 dotnet: 5.0.101
 script:
   - dotnet restore
-  - msbuild
-  - dotnet test ..\MyTest\bin\Debug\MyTest.dll
+  - dotnet test
