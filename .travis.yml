@@ -2,5 +2,4 @@ language: csharp
 solution: BTCN06_SouceCode.sln
 dotnet: 5.0.101
 script:
-  - cd MyTest
-  - dotnet test
+  - dotnet test MyTest/Lib.Tests.csproj
