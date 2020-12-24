@@ -1,0 +1,8 @@
+language: csharp
+mono: none
+dotnet: 4.0
+solution: BTCN06_SouceCode.sln
+before_script:
+  - Install-Package EPPlus -Version 5.5.0
+script:
+  - dotnet test Lib.Tests/Lib.Tests.csproj
